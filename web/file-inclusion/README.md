@@ -71,6 +71,8 @@ for fname in itertools.combinations(string.ascii_letters + string.digits, 6):
 print('[x] Something went wrong, please try again')
 ```
 
+It is possible to send 20 files in one request that will be accepted by the server.
+
 ## 7) Session Files
 
 ## 8) PHPInfo Script
