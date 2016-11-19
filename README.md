@@ -43,7 +43,7 @@ Yeap, all information should be free
 
 * [Common Modulus](crypto/)
 * [Coppersmith's Short Pad Attack](crypto/)
-* [Partial Key Exposure Attack - Boner, Durfee, Frankel](crypto/)
+* [Partial Key Exposure Attack - Boneh, Durfee, Frankel](crypto/)
 * [Hastad Broadcast Attack](crypto/)
 * [Wienner Attack](crypto/)
 * [Homomorphic Attack](crypto/)
