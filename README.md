@@ -18,6 +18,27 @@ Yeap, all information should be free
 
 ## Crypto
 
+### Stream Ciphers
+
+* [Single-byte XOR](crypto/)
+* [Repeating-key XOR](crypto/)
+* [One-time Pad Key Reuse](crypto/)
+* [MT19937 stream cipher](crypto/)
+
+### Block Ciphers
+
+* [ECB Byte-at-a-time](crypto/)
+* [ECB cut-and-paste](crypto/)
+* [CBC Padding Oracle](crypto/)
+* [CBC Bitflipping](crypto/)
+* [CTR Fixed Nonce](crypto/)
+* [CTR Bitflipping](crypto/)
+
+### Hash functions
+
+* [Length Extension Attack](crypto/)
+* [Artificial Timing Leak](crypto/)
+
 ### RSA
 
 * [Common Modulus](crypto/)
