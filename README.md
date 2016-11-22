@@ -52,4 +52,12 @@ Yeap, all information should be free
 * [Fault Attacks - Brier, Naccache, Nguyen, Tibouchi](crypto/)
 * [PKCS1 Padding Attacks](crypto/)
 
+### Other
 
+* [Caesar Cipher](crypto/)
+* [Vigenere Cipher](crypto/)
+* [Substitution Cipher](crypto/)
+
+### Exotic
+
+* [DNA Marks](crypto/)
