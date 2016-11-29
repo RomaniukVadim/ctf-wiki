@@ -1,14 +1,20 @@
 # CTF Wiki
 
-Yeap, all information should be free
+Yeah, information should be free
 
 ## Web
 
-* [PHP Quirks](web/php-quirks/)
+* [SQL Injection](web/sql-injection/)
 * [File Inclusion (LFI / RFI)](web/file-inclusion/)
 * [Command Injection](web/command-injection/)
 * [XXE](web/xxe/)
+* [XSS](web/xss/)
+* [CSRF](web/csrf/)
+* [SSRF](web/ssrf/)
+* [File Upload](web/file-upload/)
+* [PHP Object Injection](web/php-object-injection/)
 * [IP Access Control](web/ip-access-control/)
+* [PHP Quirks](web/php-quirks/)
 
 ## PWN
 
