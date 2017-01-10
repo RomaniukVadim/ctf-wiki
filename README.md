@@ -1,18 +1,47 @@
 # CTF Wiki
 
-Yeah, information should be free
-
 ## Web
 
-* [SQL Injection](web/sql-injection/)
+### SQL Injection
+* [MySQL](web/sql-injection/mysql/)
+* [PostgreSQL](web/sql-injection/postgresql/)
+* [Oracle](web/sql-injection/oracle/)
+* [SQL Server](web/sql-injection/sqlserver/)
+* [SQLite](web/sql-injection/sqlite/)
+
+### NoSQL Injection
+* [NoSQL Injection](web/nosql-injection/)
+
+### File Inclusion
 * [File Inclusion (LFI / RFI)](web/file-inclusion/)
+
+### Command Injection
 * [Command Injection](web/command-injection/)
+
+### XXE
 * [XXE](web/xxe/)
+
+### XSS
 * [XSS](web/xss/)
+
+### CSRF
 * [CSRF](web/csrf/)
+
+### SSRF
 * [SSRF](web/ssrf/)
+
+### File Upload
 * [File Upload](web/file-upload/)
-* [PHP Object Injection](web/php-object-injection/)
+
+### Deseralization
+* [PHP Object Injection](web/deserialization/php-object-injection/)
+* [Python Pickle](web/deserialization/python-pickle/)
+* [Java Deseralization](web/deserialization/java-deserialization/)
+
+### WebSockets
+* [WebSockets](web/websockets/)
+
+### Other
 * [IP Access Control](web/ip-access-control/)
 * [PHP Quirks](web/php-quirks/)
 
@@ -26,7 +55,7 @@ Yeah, information should be free
 
 ### Stream Ciphers
 
-* [Single-byte XOR](crypto/)
+* [Single-byte XOR](crypto/single-byte-xor/)
 * [Repeating-key XOR](crypto/)
 * [One-time Pad Key Reuse](crypto/)
 * [MT19937 stream cipher](crypto/)
