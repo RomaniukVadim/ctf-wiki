@@ -17,7 +17,7 @@
 
 ### Command Injection
 * [Command Injection](web/command-injection/)
-
+* [New Command]
 ### XXE
 * [XXE](web/xxe/)
 
